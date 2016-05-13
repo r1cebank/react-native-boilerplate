@@ -44,7 +44,7 @@
     "babel-preset-stage-1": "^6.3.13",
     "chai": "^3.5.0",
     "enzyme": "^2.2.0",
-    "eslint": "~2.9.0",
+    "eslint": "~2.10.0",
     "eslint-config-airbnb": "^7.0.0",
     "eslint-html-reporter": "^0.5.2",
     "eslint-loader": "^1.1.1",
