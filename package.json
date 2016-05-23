@@ -54,7 +54,7 @@
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.1.1",
-    "mocha": "^2.4.5",
+    "mocha": "^2.5.0",
     "react-addons-test-utils": "15.0.2",
     "react-dom": "15.0.2",
     "react-native-mock": "^0.2.0",
