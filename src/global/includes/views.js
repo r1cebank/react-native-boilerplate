@@ -4,8 +4,7 @@
  *  file.
  */
 
-const views = {
-    home: require('../views/home')
-};
+/* eslint-disable global-require */
 
-export default views;
+export const card = require('../../views/card');
+export const ScrollableTabView = require('../../views/tab-view');

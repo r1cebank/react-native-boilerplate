@@ -17,6 +17,9 @@ const config = {
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js'
     },
+    resolve: {
+        extensions: ['', '.js', '.android.js', '.ios.js']
+    },
     module: {
         preLoaders: [
             {
@@ -30,7 +33,9 @@ const config = {
                 test: /\.js$/,
                 include: [
                     path.resolve(__dirname, 'src'),
-                    path.resolve(__dirname, 'node_modules/react-native-navbar')
+                    path.resolve(__dirname, 'node_modules/react-native-navbar'),
+                    path.resolve(__dirname, 'node_modules/react-native-vector-icons'),
+                    path.resolve(__dirname, 'node_modules/react-native-scrollable-tab-view')
                 ],
                 loader: 'babel',
                 query: {

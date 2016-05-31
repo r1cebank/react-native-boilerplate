@@ -1,26 +1,37 @@
+/*
+ * This is the root component, it is used to register with AppRegistry
+ * Here the app will decide what root view type we will be using according to config
+ */
+
 /* @flow */
 
-import React from 'react-native';
-import { Actions, Scene, Router } from 'react-native-router-flux';
+import React from 'react';
+import { Provider } from 'react-redux';
 
-// Global includes
-import Routes from './includes/routes';
-import Views from './includes/views';
+// The root view is definatly the navigation component which define a default view
+import Navigation from './global/navigation';
+import App from './views/app';
 
-// Creating scenes from the routes
-const scenes = Actions.create(
-    <Scene key="root">
-        {Routes.map((route) =>
-            <Scene key={route.key} component={Views[route.component]} title={route.title} />
-        )}
-    </Scene>
-);
+import { Store } from './global/global-includes';
+
+// Global Actions
+import * as Actions from './state/actions/actions';
 
 // Construct the root element
 class Root extends React.Component {
+    componentWillMount() {
+        // Navigation startup code
+        // 1) Populate settings
+        // 2) Populate navigation
+        Store.appStore.dispatch(Actions.fetchNavigation());
+    }
     render() {
         return (
-            <Router scenes={scenes} />
+            <Provider store={Store.appStore}>
+                <App>
+                    <Navigation />
+                </App>
+            </Provider>
         );
     }
 }
