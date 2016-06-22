@@ -1,6 +1,6 @@
 import { Utils } from '../../../global/globalIncludes';
 
-const styles = Utils.F8StyleSheet.create({
+const styles = Utils.f8StyleSheet.create({
     container: {
         flexDirection: 'row',
         backgroundColor: 'transparent',

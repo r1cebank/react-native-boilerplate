@@ -25,7 +25,7 @@ class SessionsCarusel extends React.Component {
         if (!allSessions) {
             const { session } = this.props;
             allSessions = {
-                [Utils.FormatTime(session.startTime)]: { [session.id]: session }
+                [Utils.formatTime(session.startTime)]: { [session.id]: session }
             };
         }
 

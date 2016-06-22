@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
-import { View, Image, InteractionManager } from 'react-native';
+import { View, Image, InteractionManager, PixelRatio } from 'react-native';
 
 import { Utils } from '../../global/globalIncludes';
 
@@ -38,7 +38,7 @@ class MapView extends React.Component {
             image = (
                 <Image
                 style={Styles.map}
-                source={{ uri: Utils.GetMapURL(this.props.map) }}
+                source={{ uri: Utils.getMapURL(this.props.map, PixelRatio.get()) }}
                 />
             );
         }

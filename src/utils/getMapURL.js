@@ -1,10 +1,8 @@
-import { PixelRatio } from 'react-native';
-
-function urlForMap(map) {
+function urlForMap(map, pixelRatio) {
     if (!map) {
         return '';
     }
-    switch (PixelRatio.get()) {
+    switch (pixelRatio) {
         case 1: return map.x1.url;
         case 2: return map.x2.url;
         case 3: return map.x3.url;

@@ -2,7 +2,7 @@ import { Utils } from '../../../global/globalIncludes';
 
 const HEIGHT = 32;
 
-const styles = Utils.F8StyleSheet.create({
+const styles = Utils.f8StyleSheet.create({
     button: {
         borderColor: 'transparent',
         alignItems: 'center',

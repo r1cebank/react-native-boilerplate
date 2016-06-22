@@ -13,7 +13,7 @@ const data = createSelector(
         const filters = sessions.filters.filter((filter) => selected[filter.label]);
         let agenda = sessions.agenda;
         for (const filter of filters) {
-            agenda = Utils.FilterSessions(agenda, filter.query);
+            agenda = Utils.filterSessions(agenda, filter.query);
         }
         return {
             ...sessions,
@@ -69,7 +69,7 @@ class GeneralScheduleView extends React.Component {
                         title={day.label}
                         day={day.label}
                         key={index}
-                        sessions={Utils.FilterSessions(this.props.agenda.agenda, day.query)}
+                        sessions={Utils.filterSessions(this.props.agenda.agenda, day.query)}
                         renderEmptyList={this.renderEmptyList}
                         navigator={this.props.navigator}
                     />

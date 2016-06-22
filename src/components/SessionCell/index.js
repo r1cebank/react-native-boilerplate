@@ -6,8 +6,8 @@ import Styles from './resources/styles';
 import { Components, Assets, Utils, Colors } from '../../global/globalIncludes';
 
 const { Text } = Components.Text;
-const formatTime = Utils.FormatTime;
-const formatDuration = Utils.FormatDuration;
+const formatTime = Utils.formatTime;
+const formatDuration = Utils.formatDuration;
 
 class SessionCell extends React.Component {
     static propTypes = {

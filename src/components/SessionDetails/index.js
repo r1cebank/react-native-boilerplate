@@ -3,8 +3,7 @@
 import React from 'react';
 import { Animated, Image, View, ScrollView, TouchableOpacity, Navigator } from 'react-native';
 import Subscribable from 'Subscribable';
-// import jsonQuery from 'json-query';
-const jsonQuery = require('json-query');
+import jsonQuery from 'json-query';
 
 import { Components, Assets, Utils, Colors, Views } from '../../global/globalIncludes';
 
@@ -83,7 +82,7 @@ const SessionDetails = React.createClass({
                 {locationTitle}
                 <Text style={Styles.time}>
                     {locationTitle && ' - '}
-                    {Utils.FormatDuration(this.props.session.startTime, this.props.session.endTime)}
+                    {Utils.formatDuration(this.props.session.startTime, this.props.session.endTime)}
                 </Text>
             </Text>
         );

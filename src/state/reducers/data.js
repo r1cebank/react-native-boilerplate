@@ -6,16 +6,20 @@ import { Storage } from '../../global/globalIncludes';
 import * as ActionType from '../actions/actionTypes';
 import { InitialAppState } from '../initialState';
 
-function reducer(state = InitialAppState, action) {
+function reducer(state = InitialAppState, action, skipLogic) {
     switch (action.type) {
         case ActionType.FETCH_DATA: {
-            Storage.Generic.fetch(action.config);
+            if (!skipLogic) {
+                Storage.Generic().fetch(action.config);
+            }
             return {
                 ...state
             };
         }
         case ActionType.UPDATE_DATA: {
-            Storage.Generic.update(action.config);
+            if (!skipLogic) {
+                Storage.Generic().update(action.config);
+            }
             return {
                 ...state
             };

@@ -1,7 +1,7 @@
 import jsonQuery from 'json-query';
 
-function FilterSessions(data, query) {
+function filterSessions(data, query) {
     return jsonQuery(query, { data }).value;
 }
 
-module.exports = FilterSessions;
+module.exports = filterSessions;

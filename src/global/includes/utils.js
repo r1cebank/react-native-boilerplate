@@ -5,12 +5,12 @@
 /* eslint-disable global-require */
 
 const utils = {
-    get F8StyleSheet() { return require('../../utils/F8StyleSheet'); },
-    get FormatTime() { return require('../../utils/FormatTime'); },
-    get FormatDuration() { return require('../../utils/FormatDuration'); },
-    get GroupSessions() { return require('../../utils/GroupSessions'); },
-    get FilterSessions() { return require('../../utils/FilterSessions'); },
-    get GetMapURL() { return require('../../utils/getMapURL'); }
+    get f8StyleSheet() { return require('../../utils/f8StyleSheet'); },
+    get formatTime() { return require('../../utils/formatTime'); },
+    get formatDuration() { return require('../../utils/formatDuration'); },
+    get groupSessions() { return require('../../utils/groupSessions'); },
+    get filterSessions() { return require('../../utils/filterSessions'); },
+    get getMapURL() { return require('../../utils/getMapURL'); }
 };
 
 module.exports = utils;

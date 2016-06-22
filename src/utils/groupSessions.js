@@ -1,6 +1,6 @@
 import { Utils } from '../global/globalIncludes';
 
-const formatTime = Utils.FormatTime;
+const formatTime = Utils.formatTime;
 
 function groupSessions(sessions) {
     if (!sessions) { return {}; }
