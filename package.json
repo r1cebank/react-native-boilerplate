@@ -60,7 +60,7 @@
     "chai": "^3.5.0",
     "enzyme": "^2.2.0",
     "eslint": "^2.13.0",
-    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-airbnb": "^10.0.1",
     "eslint-html-reporter": "^0.5.2",
     "eslint-loader": "^1.1.1",
     "eslint-plugin-immutable": "^1.0.0",
