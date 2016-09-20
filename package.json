@@ -29,7 +29,7 @@
     "lodash": "^4.13.1",
     "moment": "^2.13.0",
     "rctn-localization": "^0.1.14",
-    "react": "^15.2.1",
+    "react": "^15.3.2",
     "react-native": "^0.30.0",
     "react-native-animatable": "^0.6.1",
     "react-native-linear-gradient": "^1.5.12",
