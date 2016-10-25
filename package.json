@@ -30,7 +30,7 @@
     "moment": "^2.13.0",
     "rctn-localization": "^0.1.14",
     "react": "^15.2.1",
-    "react-native": "^0.30.0",
+    "react-native": "^0.36.0",
     "react-native-animatable": "^0.6.1",
     "react-native-linear-gradient": "^1.5.12",
     "react-native-parallax": "^0.3.0",
